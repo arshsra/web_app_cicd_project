@@ -3,10 +3,10 @@ MAINTAINER arsh.sra01@gmail.com
 RUN apt-get update && apt-get install -y nginx \
  zip\
  unzip
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page289/apollo.zip /usr/share/nginx/html3
-WORKDIR /usr/share/nginx/html3
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page289/apollo.zip /usr/share/nginx/htmll
+WORKDIR /usr/share/nginx/htmll
 RUN unzip apollo.zip
-RUN cp -r html3/* /usr/share/nginx/html3
-RUN rm -rf html3 apollo.zip
+RUN cp -r htmll/* /usr/share/nginx/htmll
+RUN rm -rf htmll apollo.zip
 #CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
